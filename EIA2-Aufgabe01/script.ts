@@ -1,4 +1,4 @@
-console.log("Expecto Patronum");
+namespace Script {
 
 let subjects : string[] = ["Harry", "Hermine", "Ron", "Hagrid", "Snape", "Dumbledore"];
 let predicates : string[] = ["braut", "liebt", "studiert", "hasst", "zaubert", "zerstört"];
@@ -31,4 +31,5 @@ function getVerse(_subjects: string[], _predicates : string[], _objects: string[
 
     return a;
 
+    }
 }
