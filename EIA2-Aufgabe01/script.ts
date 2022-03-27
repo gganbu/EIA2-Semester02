@@ -13,12 +13,14 @@ namespace Script {
         console.log(sentence);
     }
 
+    // tslint:disable-next-line: typedef
     function getVerse(_subjects: string[], _predicates: string[], _objects: string[]) {
 
         let sub: number = Math.floor(Math.random() * subjects.length);
         let pre: number = Math.floor(Math.random() * subjects.length);
         let obj: number = Math.floor(Math.random() * subjects.length);
 
+        // tslint:disable-next-line: variable-name
         let Vers: string = (" ");
 
         let a: string = _subjects[sub] + Vers + _predicates[pre] + Vers + _objects[obj];
