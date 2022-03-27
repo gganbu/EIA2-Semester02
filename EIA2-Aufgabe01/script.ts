@@ -1,35 +1,35 @@
 namespace Script {
 
-let subjects : string[] = ["Harry", "Hermine", "Ron", "Hagrid", "Snape", "Dumbledore"];
-let predicates : string[] = ["braut", "liebt", "studiert", "hasst", "zaubert", "zerstört"];
-let objects : string[] = ["Zaubertränke", "den Grimm", "Lupin", "Hogwarts", "die Karte des Rumtreibers", "Dementoren"];
+    let subjects: string[] = ["Harry", "Hermine", "Ron", "Hagrid", "Snape", "Dumbledore"];
+    let predicates: string[] = ["braut", "liebt", "studiert", "hasst", "zaubert", "zerstört"];
+    let objects: string[] = ["Zaubertränke", "den Grimm", "Lupin", "Hogwarts", "die Karte des Rumtreibers", "Dementoren"];
 
-console.log(subjects, predicates, objects);
+    console.log(subjects, predicates, objects);
 
-for (let i: number = subjects.length; i > 0; i--) {
-    //console.log(i);
-    
-    let sentence: string = getVerse(subjects, predicates, objects);
-    console.log(sentence);
-}
+    for (let i: number = subjects.length; i > 0; i--) {
+        //console.log(i);
 
-function getVerse(_subjects: string[], _predicates : string[], _objects: string[]) {
+        let sentence: string = getVerse(subjects, predicates, objects);
+        console.log(sentence);
+    }
 
-    let sub : number = Math.floor(Math.random() * subjects.length);
-    let pre : number = Math.floor(Math.random() * subjects.length);
-    let obj : number = Math.floor(Math.random() * subjects.length);
+    function getVerse(_subjects: string[], _predicates: string[], _objects: string[]) {
 
-    let Vers : string = (" ");
+        let sub: number = Math.floor(Math.random() * subjects.length);
+        let pre: number = Math.floor(Math.random() * subjects.length);
+        let obj: number = Math.floor(Math.random() * subjects.length);
 
-    let a: string = _subjects[sub] + Vers + _predicates[pre] + Vers + _objects[obj];
+        let Vers: string = (" ");
 
-    _subjects.splice(sub, 1);
-    _predicates.splice(pre, 1);
-    _objects.splice(obj, 1);
+        let a: string = _subjects[sub] + Vers + _predicates[pre] + Vers + _objects[obj];
 
-//console.log(sub);
+        _subjects.splice(sub, 1);
+        _predicates.splice(pre, 1);
+        _objects.splice(obj, 1);
 
-    return a;
+        //console.log(sub);
+
+        return a;
 
     }
 }
