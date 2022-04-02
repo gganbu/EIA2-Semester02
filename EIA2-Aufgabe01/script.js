@@ -1,3 +1,4 @@
+"use strict";
 var Script;
 (function (Script) {
     let subjects = ["Harry", "Hermine", "Ron", "Hagrid", "Snape", "Dumbledore"];
@@ -9,10 +10,12 @@ var Script;
         let sentence = getVerse(subjects, predicates, objects);
         console.log(sentence);
     }
+    // tslint:disable-next-line: typedef
     function getVerse(_subjects, _predicates, _objects) {
         let sub = Math.floor(Math.random() * subjects.length);
         let pre = Math.floor(Math.random() * subjects.length);
         let obj = Math.floor(Math.random() * subjects.length);
+        // tslint:disable-next-line: variable-name
         let Vers = (" ");
         let a = _subjects[sub] + Vers + _predicates[pre] + Vers + _objects[obj];
         _subjects.splice(sub, 1);

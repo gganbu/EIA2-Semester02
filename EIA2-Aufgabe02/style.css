@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+#span {
+    position: fixed;
+    background-color: black;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    font-family: Arial;
+    color: white;
+    border-style: dashed;
+    border-color: white;
+}
+
+#div0 {
+    position: absolute;
+    background-image: url("space1.gif");
+    border-style: dashed;
+    border-color: white;    
+    width: 40%;
+    height: 60%; 
+    margin-left: 5%;
+    margin-top: 50px;
+}
+
+#div1 {
+    position: absolute;
+    background-image: url("space2.gif");
+    border-style: dashed;
+    border-color: white;    
+    width: 40%;
+    height: 60%;
+    margin-left: 53%;
+    margin-top: 50px;
+}
+
+button {
+    background-color: black;
+    color: white;
+}

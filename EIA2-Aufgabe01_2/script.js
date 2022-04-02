@@ -1,6 +1,8 @@
+"use strict";
 var Boxes;
 (function (Boxes) {
-    window.addEventListener("load", function () {
+    window.addEventListener("load", smth);
+    function smth() {
         let n = 5;
         let color;
         let x = 0;
@@ -35,7 +37,6 @@ var Boxes;
             div.style.left = _x + "px";
             div.style.top = _y + "px";
         }
-    });
+    }
 })(Boxes || (Boxes = {}));
-;
 //# sourceMappingURL=script.js.map
