@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EIA2-L03 MemoryCardGame</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<h1>L03-MemoryCardGame</h1>   
+    <form  id="menu">
+            <fieldset id="cardAmount">
+                <label for="pairs"> Anzahl der Paare von 5-25: </label>
+                <input type="number" name="pairs" id="pairs" min="5" max="25" step="1" value="5">
+            </fieldset> 
+            <br>
+            <fieldset id="cardSize">
+                <label for="size"> Kartengröße: </label>
+                <input type="range" id="size" name="size" min="100" max="200" value="100" step="1">
+            </fieldset> 
+            <br>            
+            <fieldset id="background">
+                <label for="background"> Hintergrundfarbe: </label>
+                <input id="background" name="background" type="color" value="#1d1d1d">
+            </fieldset>
+            <br>
+            <fieldset id="cardsColor">
+                <label for="cardsColor"> Kartenfarbe: </label>
+                <input id="cardsColor" name="cardsColor" type="color" value="#D3D3D3"><br>
+            </fieldset>
+            <br>
+            <fieldset id="fontColor">
+                <label for="fontColor"> Schriftfarbe: </label>
+                <input id="fontColor" name="fontColor" type="color" value="#000000"><br>
+            </fieldset>
+            
+            <fieldset>
+            <p>Schriftart:
+                <select id="textFont" name="textFont">
+                    <option selected>Arial</option>
+                    <option>Sans-Serif</option>
+                    <option>TahArial Narrowoma</option>
+                    <option>Franklin Gothic</option>
+                </select> </p>
+            </fieldset>
+            <br>
+
+    <button id="startButton" name="startButton" type="submit">Start Game!</button>
+
+    <h1 id="timer">00:00:00</h1>
+   
+</form>
+    <div id="gameArea"> </div>
+</body>
+</html>

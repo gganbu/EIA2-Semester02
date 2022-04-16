@@ -1,0 +1,84 @@
+body {
+    background-image: url("bgimg.jpg");
+    justify-content: center; 
+    align-items: center;
+    display: grid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(252, 252, 252);
+}
+
+span {
+    position: absolute;
+    font-size: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+ 
+h1 {
+    text-align: center;
+    font-family: Arial;
+    font-size: 50px;
+}
+
+#menu {
+    text-align: left;
+    font-size: 20px;
+}
+
+#gameArea > div {
+    position: relative;
+    margin: auto;
+}
+
+#pairs {
+    text-align:  center;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+#timer {
+    text-align: center;
+    color: white;
+    left: 5%;
+    top: 0%;
+    position: absolute;
+}
+
+#textFont{
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 15px;
+}
+ 
+#startButton {
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: whitesmoke;
+}
+ 
+#gameArea {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    border: none;
+}
+
+fieldset {
+    border: none;
+}
+ 
+.hidden {
+    display: none;
+}
+ 
+.visible {
+    visibility: hidden;
+}
