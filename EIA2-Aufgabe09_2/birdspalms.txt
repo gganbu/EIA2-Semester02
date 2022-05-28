@@ -1,0 +1,105 @@
+        //bird
+        // tslint:disable-next-line: typedef
+        let x = Math.random() * _x;
+        // tslint:disable-next-line: typedef
+        let y = Math.random() * _y;
+        crc2.translate(x, y);
+        crc2.beginPath();
+        crc2.arc(220, 120, 10, 0, Math.PI * 1, true);
+        crc2.lineWidth = 3;
+        crc2.stroke();
+        crc2.strokeStyle = "#000000";
+        crc2.closePath();
+
+        crc2.beginPath();
+        crc2.arc(240, 120, 10, 0, Math.PI * 1, true);
+        crc2.lineWidth = 3;
+        crc2.stroke();
+        crc2.strokeStyle = "#000000";
+        crc2.closePath();
+
+        //bird2
+        crc2.beginPath();
+        crc2.arc(280, 85, 10, 0, Math.PI * 1, true);
+        crc2.lineWidth = 3;
+        crc2.stroke();
+        crc2.strokeStyle = "#000000";
+        crc2.closePath();
+
+        crc2.beginPath();
+        crc2.arc(300, 85, 10, 0, Math.PI * 1, true);
+        crc2.lineWidth = 3;
+        crc2.stroke();
+        crc2.strokeStyle = "#000000";
+        crc2.closePath();
+
+        //bird3
+        crc2.beginPath();
+        crc2.arc(750, 200, 10, 0, Math.PI * 1, true);
+        crc2.lineWidth = 3;
+        crc2.stroke();
+        crc2.strokeStyle = "#000000";
+        crc2.closePath();
+
+        crc2.beginPath();
+        crc2.arc(770, 200, 10, 0, Math.PI * 1, true);
+        crc2.lineWidth = 3;
+        crc2.stroke();
+        crc2.strokeStyle = "#000000";
+        crc2.closePath();
+
+
+        //bird4
+        crc2.beginPath();
+        crc2.arc(790, 240, 10, 0, Math.PI * 1, true);
+        crc2.lineWidth = 3;
+        crc2.stroke();
+        crc2.strokeStyle = "#000000";
+        crc2.closePath();
+
+        crc2.beginPath();
+        crc2.arc(810, 240, 10, 0, Math.PI * 1, true);
+        crc2.lineWidth = 3;
+        crc2.stroke();
+        crc2.strokeStyle = "#000000";
+        crc2.closePath();
+
+
+        //bird5
+        crc2.beginPath();
+        crc2.arc(840, 100, 10, 0, Math.PI * 1, true);
+        crc2.lineWidth = 3;
+        crc2.stroke();
+        crc2.strokeStyle = "#000000";
+        crc2.closePath();
+
+        crc2.beginPath();
+        crc2.arc(860, 100, 10, 0, Math.PI * 1, true);
+        crc2.lineWidth = 3;
+        crc2.stroke();
+        crc2.strokeStyle = "#000000";
+        crc2.closePath();
+        crc2.translate(-50, -80);
+
+
+
+
+
+
+
+BOAT 
+
+        crc2.beginPath();
+        crc2.arc(_x + 237, _y + 206, 42, 18, 1);
+        crc2.fillStyle = "#ffffff";
+
+        crc2.fill();
+        crc2.closePath();
+
+        crc2.beginPath();
+        crc2.fillStyle = "#795644";
+
+        crc2.arc(_x + 260, _y + 230, 45, 19, 1 * Math.PI);
+        crc2.rect(_x + 255, _y + 175, 10, 60);
+        crc2.fill();
+        crc2.closePath();
