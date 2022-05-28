@@ -70,7 +70,7 @@ var Beach;
         }
         move(_timeslice) {
             let offset = new Beach.Vector(this.velocity.x, this.velocity.y);
-            offset.scale(_timeslice);
+            offset.factor(_timeslice);
             this.position.add(offset);
             if (this.position.x < 0)
                 this.position.x += Beach.crc2.canvas.width;

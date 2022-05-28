@@ -56,7 +56,7 @@ var Beach;
         }
         move(_timeslice) {
             let offset = new Beach.Vector(this.velocity.x, 0);
-            offset.scale(_timeslice);
+            offset.factor(_timeslice);
             this.position.add(offset);
         }
     }

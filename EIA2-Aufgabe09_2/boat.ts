@@ -73,7 +73,7 @@ namespace Beach {
         move(_timeslice: number): void {
 
             let offset: Vector = new Vector(this.velocity.x, 0);
-            offset.scale(_timeslice);
+            offset.factor(_timeslice);
             this.position.add(offset);
 
         }

@@ -4,12 +4,12 @@ var Beach;
     class Cloud {
         position;
         fillColor;
-        velocity;
+        motion;
         constructor(_position, _fillColor) {
             this.position = _position;
             this.fillColor = _fillColor;
-            this.velocity = new Beach.Vector(0, 0);
-            this.velocity.random(200, 100);
+            this.motion = new Beach.Vector(0, 0);
+            this.motion.random(200, 100);
         }
         draw() {
             Beach.crc2.beginPath();
@@ -21,9 +21,9 @@ var Beach;
             Beach.crc2.closePath();
             Beach.crc2.fill();
         }
-        move(_timeslice) {
-            let offset = new Beach.Vector(this.velocity.x, 0);
-            offset.scale(_timeslice);
+        move(_time) {
+            let offset = new Beach.Vector(this.motion.x, 0);
+            offset.factor(_time);
             this.position.add(offset);
             if (this.position.x < 0)
                 this.position.x += Beach.crc2.canvas.width;

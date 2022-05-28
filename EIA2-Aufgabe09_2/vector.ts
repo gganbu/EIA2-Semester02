@@ -12,7 +12,7 @@ namespace Beach {
             this.y = _y;
         }
 
-        scale(_factor: number): void {
+        factor(_factor: number): void {
             this.x *= _factor;
             this.y *= _factor;
         }
@@ -27,7 +27,7 @@ namespace Beach {
             let direction: number = Math.random() * 2 * Math.PI;
 
             this.set(Math.cos(direction), Math.sin(direction));
-            this.scale(length);
+            this.factor(length);
         }
         
         copy(): Vector {
