@@ -1,4 +1,3 @@
-"use strict";
 var Script;
 (function (Script) {
     let subjects = ["Harry", "Hermine", "Ron", "Hagrid", "Snape", "Dumbledore"];
