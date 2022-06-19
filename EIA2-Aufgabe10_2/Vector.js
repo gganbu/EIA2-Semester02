@@ -31,4 +31,4 @@ var Beach;
     }
     Beach.Vector = Vector;
 })(Beach || (Beach = {}));
-//# sourceMappingURL=vector.js.map
+//# sourceMappingURL=Vector.js.map

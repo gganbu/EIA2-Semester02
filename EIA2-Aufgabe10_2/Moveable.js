@@ -31,4 +31,4 @@ var Beach;
     }
     Beach.Moveable = Moveable;
 })(Beach || (Beach = {}));
-//# sourceMappingURL=moveable.js.map
+//# sourceMappingURL=Moveable.js.map

@@ -24,4 +24,4 @@ var Beach;
     }
     Beach.Cloud = Cloud;
 })(Beach || (Beach = {}));
-//# sourceMappingURL=cloud.js.map
+//# sourceMappingURL=Cloud.js.map

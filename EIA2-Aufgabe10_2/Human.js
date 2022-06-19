@@ -87,4 +87,4 @@ var Beach;
     }
     Beach.Human = Human;
 })(Beach || (Beach = {}));
-//# sourceMappingURL=human.js.map
+//# sourceMappingURL=Human.js.map
