@@ -73,4 +73,4 @@ var Beach;
     }
     Beach.Bird = Bird;
 })(Beach || (Beach = {}));
-//# sourceMappingURL=Bird.js.map
+//# sourceMappingURL=bird.js.map

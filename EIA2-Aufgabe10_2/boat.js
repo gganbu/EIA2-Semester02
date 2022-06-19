@@ -27,4 +27,4 @@ var Beach;
     }
     Beach.Boat = Boat;
 })(Beach || (Beach = {}));
-//# sourceMappingURL=Boat.js.map
+//# sourceMappingURL=boat.js.map
