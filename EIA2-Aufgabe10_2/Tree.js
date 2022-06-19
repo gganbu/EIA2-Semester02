@@ -63,4 +63,4 @@ var Beach;
     }
     Beach.Tree = Tree;
 })(Beach || (Beach = {}));
-//# sourceMappingURL=Tree.js.map
+//# sourceMappingURL=tree.js.map
