@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Gemüsegarten-Simulator </title>
+	<meta charset="UTF-8" />
+	<script type="text/javascript" src="randomNum.js"></script>
+	<script type="text/javascript" src="graf.js"></script>
+	<script type="text/javascript" src="FarmGame.js"></script>
+	<script type="text/javascript" src="hcalc.js"></script>
+	<script type="text/javascript" src="translation.js"></script>
+	<script type="text/javascript" src="farmsim.js"></script>
+	<script type="text/javascript" src="Potato.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="popup">
+        <br>
+        <h2>Settings</h2>
+		<br> 
+		<div class="settings">
+        <label> Startkapital </label> <br>
+		<input type="range" id="startMoney" min="5" max="200" step="5" value="100" oninput="this.nextElementSibling.value = this.value">
+		<output class="output" id="sMoney">100</output> 
+	</div>
+	<div class="settings2">
+        <label> Preisschwankung </label> <br>
+		<input type="range" id="moneyChange" min="1" max="3" value="1" oninput="this.nextElementSibling.value = this.value">
+		<output class="output2" id="mChange">1</output> 
+	</div>
+	<br>
+        <a href="#" id="start" >START</a>
+    </div>
+
+<div id="header">
+	<br>
+	<img src="assets/titel.png">
+	<br> <br>
+</div>
+<div id="stage"></div>
+<br>
+	<img src="assets/credit.png">
+
+<hr>
+</body>
+</html>
