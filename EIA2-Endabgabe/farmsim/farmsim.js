@@ -372,18 +372,18 @@ function init(){
 
 		// Interactivity initialization
 		this.interactive = true;
-		this.click = function(id){
+		this.click = function(){
 			clickCallback = clickEvent;
 			// Update activation state fuer mode select buttons
 			for(var i = 0; i < buttons.length; i++)
 				buttons[i].setActive(buttons[i] == this);
 		}
 		this.tap = this.click;
-		this.mouseover = function(id){
+		this.mouseover = function(){
 			buttonTipWorkingPowerText.setText(clickEvent.description());
 			buttonTip.visible = true;
 		}
-		this.mouseout = function(id){
+		this.mouseout = function(){
 			buttonTip.visible = false;
 		}
 		this.hitArea = new graf.Rectangle(0, 0, 115, 40); //Rechte Leiste Hitboxen
